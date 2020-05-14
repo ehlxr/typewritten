@@ -11,7 +11,6 @@ Leaves all the room for what's important.
 - Prompt symbol customization
 - Cursor customization
 - Current directory
-- Option to display the git root directory as well as the current working directory
 - Current git branch
 - Git status indicators:
   - ``?``     &nbsp; — untracked change(s);
@@ -43,30 +42,19 @@ Set ``ZSH_THEME="typewritten"`` in your ``.zshrc``.
 
 ## Customization options
 
-### Display git root directory
-By default, only the current working directory is displayed on the right. The `TYPEWRITTEN_GIT_RELATIVE_PATH` option can be turned on (`export TYPEWRITTEN_GIT_RELATIVE_PATH=true`) to display the git root directory as well as the current working directory:
-```shell
->                 git_repo_root/directory -> master
-```
-or
-```shell
->                 git_repo_root/.../directory -> master
-```
-depending on nesting.
-
 ### Prompt layout
 3 prompt layouts are available.<br>
 To customize the prompt layout, add define the `TYPEWRITTEN_PROMPT_LAYOUT` variable in your `.zshrc` to one of following values : `singleline`, `multiline`, or `singleline_verbose`.
 
 **singleline (default)**
 ```shell
-> 
+>
 ```
 
 **multiline**
 ```shell
 user@host
-> 
+>
 ```
 
 **singleline verbose**
